@@ -10,7 +10,11 @@ import java.util.List;
 
 
 @Service
-public class DepartmentServiceImpl implements DepartmentService {
+public class DepartmentServiceImpl
+        implements DepartmentService {
+
+    private final DepartmentRepository repository;
+
     public DepartmentServiceImpl(
             DepartmentRepository repository) {
         this.repository = repository;
